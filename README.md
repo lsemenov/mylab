@@ -10,13 +10,13 @@ simpleapi-это Spring приложение написаное на JAVA, с д
 ---
 ### *Windows 10*
 
-1.Загрузите проект Github. Для клонироваybz репозитория необходимо выполнить команду:
+1.Загрузите проект Github. Для клонирования репозитория необходимо выполнить команду:
 
 
 `git clone https://github.com/lsemenov/mylab1.git`
 
 
-2.Необходимо подготовить виртуальную среду для развёртывания БД . Установите [Docker Toolbox](https://github.com/docker/toolbox/releases)
+2.Необходимо подготовить виртуальную среду для развёртывания БД . Установите [Docker Toolbox](https://github.com/docker/toolbox/releases), 
 
 
 3.Установите postgresql  (локально или на удаленном сервере). Чтобы установить PostgreSQL образ, вы можете выполнить следующую команду в Docker Quickstart Terminal:
