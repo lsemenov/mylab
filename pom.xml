@@ -30,6 +30,7 @@
             <version>2.3.4.RELEASE</version>
         </dependency>
 
+
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -60,6 +61,7 @@
     </dependencies>
 
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
