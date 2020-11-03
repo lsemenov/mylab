@@ -76,7 +76,7 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/XXX-1.0.j
 
 #### *Примеры crud запросов:*
 
-XXX.XXX.XXX.XXXЖ8080, IP и порт виртуальной машины  docker на которой работает приложение.
+XXX.XXX.XXX.XXX:8080, IP и порт виртуальной машины  docker на которой работает приложение.
 
 Чтобы узнать IP виртуальной машины Docker, необходимо в Docker Terminal выполнить следующую команду:
 
