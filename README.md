@@ -10,7 +10,7 @@ simpleapi-это Spring приложение написаное на JAVA, с д
 ---
 ### *Windows 10*
 
-1.Загрузите проект Github. Для клонирования репозитория необходимо выполнить команду:
+1.Загрузите проект из Github. Для клонирования репозитория необходимо выполнить команду:
 
 
 `git clone https://github.com/lsemenov/mylab1.git`
@@ -30,7 +30,7 @@ simpleapi-это Spring приложение написаное на JAVA, с д
 ` docker run -e POSTGRES_PASSWORD=root -p 5432:5432`
 
 
-5.Добавляем базу данных (БД) в Spring приложение. Зайдите в репозиторий с проектом ...\src\main\resources. Заполните следующие поля в файле ...\src\main\resources..application.properties
+5.Добавляем базу данных (БД) в Spring приложение. Зайдите в репозиторий с проектом `...\src\main\resources`. Заполните следующие поля в файле `...\src\main\resources..application.properties`.
 
 Настройки БД для Postgres:
 
@@ -41,18 +41,25 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
 
 где, XXX.XXX.XXX.XXX:5432 -IP адрес виртуальной машины Docker
 
+Чтобы узнать IP виртуальной машины Docker, необходимо в Docker Terminal выполнить следующую команду:
+
+
+`docker-machine ip default`
+
+
 После настройки БД, необходимо пересобрать приложение, используя для этого [maven](https://maven.apache.org/download.cgi). 
 
-6.Для сборки приложения в Maven из командной строки, необходимо выполнить следующую команду из корневой директории проекта:
+6.Для сборки приложения из командной строки с помощью maven, необходимо выполнить следующую команду из корневой директории проекта:
 
 
 `mvn package -Dmaven.test.skip=true`
   
   
-  Создастся JAR-файл в директории проекта .../target/XXX-1.0.jar. Необходимо в файле <Dockerfile> заменить строчки для пересобранного проекта:
+  Создастся JAR-файл в директории проекта `.../target/XXX-1.0.jar`. Необходимо Dockerfile заменить строчки для пересобранного проекта:
   
-`COPY /target/simpleapi-1.0.jar XXX-1.0.JAR>
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/XXX-1.0.jar"]`
+`COPY /target/simpleapi-1.0.jar XXX-1.0.JAR`
+
+`ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/XXX-1.0.jar"]`
 
 
 где, XXX-1.0.jar -ваш пересобранный проект (simpleapi-1.0.jar)
@@ -76,12 +83,7 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/XXX-1.0.j
 
 ### *Примеры CURL запросов:*
 
-XXX.XXX.XXX.XXX:8080, IP и порт виртуальной машины  docker на которой работает приложение.
-
-Чтобы узнать IP виртуальной машины Docker, необходимо в Docker Terminal выполнить следующую команду:
-
-
-`docker-machine ip default`
+Где,  XXX.XXX.XXX.XXX:8080 -  IP и порт виртуальной машины  docker на которой работает приложение.
 
 
 1. Получить список топ 10 пользователей Kaggle:
@@ -89,7 +91,7 @@ XXX.XXX.XXX.XXX:8080, IP и порт виртуальной машины  docker
 
 `curl  http://XXX.XXX.XXX.XXX:8080/api/v1/kaggle`
 
-В ответ будет получен JSON ответ с информация о всех пользователях которая имеется в БД.
+В ответ будет получен JSON ответ с информацией о всех пользователях которые имеются в БД.
 
 
 2. Получить информацию о пользователе по id:
@@ -133,4 +135,5 @@ XXX.XXX.XXX.XXX:8080, IP и порт виртуальной машины  docker
 
 ---
 ### *Ссылка на развернутое приложение на платформе Heroku:*
+
 
