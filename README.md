@@ -74,7 +74,7 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/XXX-1.0.j
   
   ---
 
-#### *Примеры crud запросов:*
+### *Примеры CURL запросов:*
 
 XXX.XXX.XXX.XXX:8080, IP и порт виртуальной машины  docker на которой работает приложение.
 
@@ -125,4 +125,12 @@ XXX.XXX.XXX.XXX:8080, IP и порт виртуальной машины  docker
 `curl  http://XXX.XXX.XXX.XXX:8080/api/v1/status` 
 
 В ответ будет получен JSON в виде {hostname: "hostname"}.
+
+---
+## *Лабораторная работа №3: CI/CD и деплой приложения в Heroku*
+### *Цель лабораторной работы:*
+Знакомство с CI/CD и его реализацией на примере Travis CI и Heroku.
+
+---
+### *Ссылка на развернутое приложение на платформе Heroku:*
 
