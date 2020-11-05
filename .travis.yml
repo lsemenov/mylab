@@ -13,7 +13,7 @@ env:
     - secure: "IYLNZAZAqYGhlvggJGGDWTCxkXVthZrzCnQqyodcQwkX7najxgWRLKimJU/HqaRgjH3SX0Vp2J7dAGaN1dRfmghXqYW0OziRbjrlyw5X++DeTWlTkekbjZb1m5QyLCdPSHNvdHVVAQM5vZ8CbzXO/JAw0Zp229sgnoHVYRhOa9j64oLzGtk938/UkNXNS8Hho9iPYo4R6SSaXNapX/hBXQ9LPJSxs1O5Rb7xdN3MYI5pC5Kc7raBcpmwGJlzgNl37iOXPU0FWIZc24yCH6fOPk14vh8NHsPZ7Ec/rqZy6NHeZ1OIEB3ohb5a1IJXvUWf4GNb4FtLVKg4Eyj3S4p/iz3PIjdCEHTjs3doiPWvMOPcwwXobY0l1pH1IeiiPtF+mWE5KdSe0CdPJCqaOS7z/CZmVOklg1xKZ+YUXuN/hQhWYCOf+rpxMpBi9kCl2FmIWN47h98UtdHIaxjcMSNl13cbj6SGA5tiUcSfY7ZsEZeTE0fzm1XtEUOkjzJWYYMsgoxqWWEwWCNiG8hGKUTKhoBobntPpkTqMkaRByvVAca/EgjWaNZehEEjJlH++My7xmJ0BL7QfRPcd6vp4V5D4+32pO8xc+pwe+I4FEVwXiH/Wj+HTe7ZEVIztIpBFkRIBk5JbrpN46lcurGENv6M+yVv2PHTJq/IUTSq1PJQTxE="
     - COMMIT=${TRAVIS_COMMIT::7}
 
-script: mvnw clean install -B
+script: mvn clean package -DskipTests=true
 
 after_success:
     - docker login -u $DOCKER_USER -p $DOCKER_PASS
