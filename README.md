@@ -150,7 +150,7 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
 
 
 
-В ответ будет получен статус 204 No Content.
+
 
 
 5. Получит значение hostname:
