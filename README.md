@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lsemenov/mylab.svg?branch=master)](https://travis-ci.org/lsemenov/mylab)
 # *Технологии разработки программного обеспечения*
 ## *Лабораторная работа № 1: создание микросервиса на Spring Boot с базой данных*
 ### *Семенов Алексей Игоревич ЗМБД2031*
