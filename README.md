@@ -26,7 +26,7 @@ simpleapi-это Spring приложение написаное на JAVA, с д
 `docker pull postgres`
 
 
-4. Подготовка базы данных для добавления к Spring-приложению. Чтобы запустить Postgres Docker-контейнер, необходимо выполнить следующие команды в Docker Quickstart Terminal:
+4.Подготовка базы данных для добавления к Spring-приложению. Чтобы запустить Postgres Docker-контейнер, необходимо выполнить следующие команды в Docker Quickstart Terminal:
 
 ` docker run -e POSTGRES_PASSWORD=root -p 5432:5432`
 
@@ -72,7 +72,7 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
 `docker buil . -t <ImageName>`
 
 
-8. В терминале Docker запускаем контейнер с нашим приложением следующей командой:
+8.В терминале Docker запускаем контейнер с нашим приложением следующей командой:
 
 
 `docker run -p 8080:8080 <ImageName>`
