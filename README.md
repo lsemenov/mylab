@@ -136,4 +136,8 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
 ---
 ### *Ссылка на развернутое приложение на платформе Heroku:*
 
+<https://kaggleranking.herokuapp.com/api/v1/status>
+
+<https://kaggleranking.herokuapp.com/api/v1/kaggle>
+
 
