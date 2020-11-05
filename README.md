@@ -70,7 +70,7 @@ spring.datasource.url=jdbc:postgresql://XXX.XXX.XX.XX:5432/postgres`
   
   
   
-  Создастся JAR-файл в директории проекта `.../target/XXX-1.0.jar`. Необходимо Dockerfile заменить строчки для пересобранного проекта:
+  Создастся JAR-файл в директории проекта `.../target/XXX-1.0.jar`. Необходимо в Dockerfile заменить строчки для пересобранного проекта:
   
   
   
