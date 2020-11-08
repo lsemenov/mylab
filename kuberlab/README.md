@@ -65,7 +65,7 @@ spec:
           ports:
             - containerPort: 8080
       hostAliases:
-        - ip: "172.18.114.161" # The IP of localhost from MiniKube
+        - ip: "192.168.193.129" # The IP of localhost from MiniKube
           hostnames:
           - postgres.local        
           
@@ -83,4 +83,4 @@ spec:
 
 ## Обращаюсь к ендпоинту, где отображается hostname:
 
-https://172.17.247.109:31317/api/v1/status
+https://192.168.193.129:31317/api/v1/status
