@@ -19,7 +19,8 @@ Kubernetes оркестратор контеййнеров
   `kubectl apply -f .`
 
 ## service.yaml
-`
+
+```
 apiVersion: v1
 kind: Service
 metadata:
@@ -32,12 +33,12 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    app: simpleapi
-    `
+    app: simpleapi 
+```
 
 ## deployment.yaml
 
- `
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -66,5 +67,20 @@ spec:
       hostAliases:
         - ip: "172.18.114.161" # The IP of localhost from MiniKube
           hostnames:
-          - postgres.local
-`
+          - postgres.local        
+          
+```
+
+## Проверяем  количество подов с помощью команды:
+
+   `kubectl get pods`
+    
+ [Скриншты вывода команды консоли](https://github.com/lsemenov/mylab/blob/master/kuberlab/kubectl_get_pods.jpg)
+
+## Осмотр подов в графическом интерфейсе:
+
+[Скриншоты графического интерфейса с подами](https://github.com/lsemenov/mylab/blob/master/kuberlab/dashboard.jpg)
+
+## Обращаюсь к ендпоинту, где отображается hostname:
+
+https://172.17.247.109:31317/api/v1/status
