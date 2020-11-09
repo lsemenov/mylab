@@ -84,3 +84,6 @@ spec:
 ## Обращаюсь к ендпоинту, где отображается hostname:
 
 https://192.168.193.129:31317/api/v1/status
+
+
+[Видеокомментарии с обзором кластера ](https://www.youtube.com/watch?v=QvbB9jNc8_E)
